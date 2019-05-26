@@ -41,10 +41,20 @@ public class PartController {
     public ModelAndView displayAllPart() {
         System.out.println("Part Page Requested : All Parts");
         ModelAndView mv = new ModelAndView();
-        //List partLit = partService.getAllParts();
-        List partLit = partService.getPageParts(0);
+        List partLit = partService.getAllParts();
         mv.addObject("partList", partLit);
         mv.setViewName("allParts");
+        return mv;
+    }
+
+    //Get All Parts JSON
+    @RequestMapping(value = "/allPartsJson", method = RequestMethod.GET)
+    public ModelAndView displayAllPartJson() {
+        System.out.println("Part Page Requested : All Parts JSON");
+        ModelAndView mv = new ModelAndView();
+        List partLit = partService.getAllParts();
+        mv.addObject("partList", partLit);
+        mv.setViewName("allPartsJson");
         return mv;
     }
 
