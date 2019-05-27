@@ -3,6 +3,7 @@ package by.ats.controller;
 import by.ats.entity.Part;
 import by.ats.service.PartService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -36,17 +37,6 @@ public class PartController {
         return mv;
     }
 
-    //Get All Parts
-    @RequestMapping(value = "/allParts", method = RequestMethod.POST)
-    public ModelAndView displayAllPart() {
-        System.out.println("Part Page Requested : All Parts");
-        ModelAndView mv = new ModelAndView();
-        List partLit = partService.getAllParts();
-        mv.addObject("partList", partLit);
-        mv.setViewName("allParts");
-        return mv;
-    }
-
     //Get All Parts JSON
     @RequestMapping(value = "/allPartsJson", method = RequestMethod.GET)
     public ModelAndView displayAllPartJson() {
@@ -67,7 +57,7 @@ public class PartController {
     }
 
     @RequestMapping(value = "/addPart", method = RequestMethod.POST,
-            consumes = "application/x-www-form-urlencoded;charset=UTF-8")
+            headers = {"content-type=application/x-www-form-urlencoded"})
     public ModelAndView saveNewPart(@ModelAttribute Part part, BindingResult result) {
         ModelAndView mv = new ModelAndView("redirect:/home");
 
@@ -94,7 +84,7 @@ public class PartController {
     }
 
     @RequestMapping(value = "/editPart/{id}", method = RequestMethod.POST,
-            consumes = "application/x-www-form-urlencoded;charset=iso-8859-1")
+            headers = {"content-type=application/x-www-form-urlencoded"})
     public ModelAndView saveEditedUser(@ModelAttribute Part part, BindingResult result) {
         ModelAndView mv = new ModelAndView("redirect:/home");
 

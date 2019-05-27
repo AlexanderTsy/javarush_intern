@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <title>Home</title>
 </head>
@@ -11,7 +11,7 @@
     <div class="container">
 	<h1>${headerMessage}</h1>
 
-        <form:form method="POST" action="addPart" modelAttribute="part" accept-charset="TF-8">
+        <form:form method="POST" action="addPart" modelAttribute="part">
              <table>
                 <tr>
                     <td><form:label path="name">Наименование</form:label></td>

@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta charset="UTF-8">
 <title>Parts - Главная</title>
 <!-- TODO copy resources with maven dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
