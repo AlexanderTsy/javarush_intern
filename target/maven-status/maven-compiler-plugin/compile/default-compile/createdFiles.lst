@@ -1,8 +1,0 @@
-by\ats\entity\Part.class
-by\ats\config\HibernateConfig.class
-by\ats\service\PartService.class
-by\ats\repository\PartRepository.class
-by\ats\config\ServletInitializer.class
-by\ats\controller\PartController.class
-by\ats\config\WebMvcConfig.class
-by\ats\service\PartServiceImpl.class

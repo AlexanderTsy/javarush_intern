@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88f18f53-e431-4c8b-a65d-c3a85d65cd68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/ats/controller/PartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/ats/controller/PartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addPart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addPart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editPart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editPart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Parts/WEB-INF/views/addPart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Parts/WEB-INF/views/addPart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Parts/WEB-INF/views/editPart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Parts/WEB-INF/views/editPart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Parts/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Parts/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editPart.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -60,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addPart.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-102">
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -413,7 +406,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2549234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -572,7 +564,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editPart.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -593,7 +585,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addPart.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
