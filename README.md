@@ -1,6 +1,15 @@
 # javarush_intern
 Javarush internship test task
 
+## Setup
+  mvn install
+  
+  deploy Parts.war to server
+  
+  run sql_data_script.sql to 'test' database supporting mysql5 dialect
+  
+  open application in browser
+
 ## Known issues
 ### charset issue
 #### description
@@ -12,20 +21,10 @@ Javarush internship test task
       controller @RequestMapping( headers = {"content-type=application/x-www-form-urlencoded"})
 #### solution
       to be done
-### pagination filter issue
+### pagination + filter issue
 #### description
-      when setting obligate radio, filter applies to pages.
+      when setting obligate radio (все детали, только необходимые, опциональные), filter applies to every page separately.
 #### correct functionality 
-      filer array of parts than paginate it.
+      filer whole array of parts than paginate it.
 #### solution
       to be done
-  
-## Setup
-  mvn install
-  
-  deploy Parts.war to server
-  
-  run sql_data_script.sql to 'test' database supporting mysql5 dialect
-  
-  open application in browser
-  
