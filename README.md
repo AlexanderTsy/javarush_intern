@@ -26,5 +26,10 @@ Javarush internship test task
       when setting obligate radio (все детали, только необходимые, опциональные), filter applies to every page separately.
 #### correct functionality 
       filer whole array of parts than paginate it.
+#### didn't work
+      javascript angularjs filters
+      $scope.filteredParts = $filter('filter')($scope.parts,$scope.search.name);
+			$scope.filteredParts = $filter('limitTo')($scope.filteredParts, end, begin);
 #### solution
+      consider using above mentioned filters inside pageChanged event
       to be done
