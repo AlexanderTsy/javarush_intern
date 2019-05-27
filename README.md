@@ -22,7 +22,10 @@ Javarush internship test task
   
 ## Setup
   mvn install
+  
   deploy Parts.war to server
+  
   run sql_data_script.sql to 'test' database supporting mysql5 dialect
+  
   open application in browser
   
