@@ -66,7 +66,8 @@ public class PartController {
         return mv;
     }
 
-    @RequestMapping(value = "/addPart", method = RequestMethod.POST)
+    @RequestMapping(value = "/addPart", method = RequestMethod.POST,
+            consumes = "application/x-www-form-urlencoded;charset=UTF-8")
     public ModelAndView saveNewPart(@ModelAttribute Part part, BindingResult result) {
         ModelAndView mv = new ModelAndView("redirect:/home");
 
@@ -92,7 +93,8 @@ public class PartController {
         return mv;
     }
 
-    @RequestMapping(value = "/editPart/{id}", method = RequestMethod.POST)
+    @RequestMapping(value = "/editPart/{id}", method = RequestMethod.POST,
+            consumes = "application/x-www-form-urlencoded;charset=iso-8859-1")
     public ModelAndView saveEditedUser(@ModelAttribute Part part, BindingResult result) {
         ModelAndView mv = new ModelAndView("redirect:/home");
 

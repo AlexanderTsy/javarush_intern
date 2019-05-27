@@ -1,24 +1,25 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <title>Home</title>
 </head>
 <body>
+    <div class="container">
 	<h1>${headerMessage}</h1>
 
-        <form:form method="POST" action="addPart" modelAttribute="part">
+        <form:form method="POST" action="addPart" modelAttribute="part" accept-charset="TF-8">
              <table>
                 <tr>
                     <td><form:label path="name">Наименование</form:label></td>
                     <td><form:input path="name"/></td>
                 </tr>
                 <tr>
-                    <td><form:label path="obligate">Необходимость</form:label></td>
-                    <td><form:input path="obligate"/></td>
+                    <td><form:radiobutton path="obligate" value="true"/> необходимая</td>
+                    <td><form:radiobutton path="obligate" value="false"/> опциональная</td>
                 </tr>
                 <tr>
                     <td><form:label path="quantity">Количество</form:label></td>
@@ -29,6 +30,6 @@
                 </tr>
             </table>
         </form:form>
-
+    </div>
 </body>
 </html>

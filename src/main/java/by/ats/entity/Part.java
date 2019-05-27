@@ -7,13 +7,15 @@ import javax.persistence.*;
 public class Part {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private long id;
     @Column(nullable = false)
     private String name;
     @Column(name = "is_obligate", columnDefinition = "BOOLEAN NOT NULL")
-    private Boolean obligate;
+    //for NOT NULL field type have to be boolean not Boolean
+    // Boolean allows to set NULL
+    private boolean obligate;
     @Column(columnDefinition = "INT NOT NULL")
     private int quantity;
 
@@ -33,13 +35,11 @@ public class Part {
         this.name = name;
     }
 
-    public Boolean getObligate() {
+    public boolean getObligate() {
         return obligate;
     }
 
-    public void setObligate(Boolean obligate) {
-        obligate = obligate;
-    }
+    public void setObligate(boolean obligate) { this.obligate = obligate; }
 
     public int getQuantity() {
         return quantity;

@@ -42,6 +42,8 @@
 <form>
         <input type="text" style="width:20em" ng-model = "$scope.search.name" placeholder = "Наименование" />
         <input type="reset" ng-click="$scope.search={}"/>
+        <br>
+        <a type="button" href="${pageContext.request.contextPath}/addPart" class="" >Добавить деталь</a>
 </form>
   <input type="radio" ng-model="sortBy" ng-value="" checked> все детали<br>
   <input type="radio" ng-model="sortBy.obligate" ng-value="true"> только необходимые<br>
@@ -60,7 +62,7 @@
                     <td>{{ part.obligate === "true" ? "Да" : "Нет" }}</td>
                     <td>{{ part.quantity }}</td>
                     <td><a href="{{ part._links.self.href }}">Изменить</a></td>
-                    <td><a href="/Parts/deletePart/{{ part.id }}">Удалить</a></td>
+                    <td><a href="${pageContext.request.contextPath}/deletePart/{{ part.id }}">Удалить</a></td>
                 </tr>
             </table>
 			<pagination
