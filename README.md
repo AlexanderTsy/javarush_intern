@@ -19,6 +19,7 @@ Javarush internship test task
       add enctype="application/x-www-form-urlencoded" to form tag
       controller @RequestMapping( consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
       controller @RequestMapping( headers = {"content-type=application/x-www-form-urlencoded"})
+      jdbc.url=jdbc:mysql://localhost/test?useSSL=false&amp;characterEncoding=UTF-8
 #### solution
       to be done
 ### pagination + filter issue
